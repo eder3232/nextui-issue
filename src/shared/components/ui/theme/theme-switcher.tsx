@@ -15,9 +15,13 @@ export function ThemeSwitcher() {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1>The current theme is: {theme}</h1>
-      <button onClick={() => setTheme('light')}>Light Mode</button>
-      <button onClick={() => setTheme('purple-dark')}>Dark Mode</button>
+      <h1 className="text-3xl">The current theme is: {theme}</h1>
+      <button className="text-3xl" onClick={() => setTheme('light')}>
+        Light Mode
+      </button>
+      <button className="text-3xl" onClick={() => setTheme('purple-dark')}>
+        Dark Mode
+      </button>
     </div>
   )
 }
